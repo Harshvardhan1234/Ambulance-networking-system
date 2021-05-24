@@ -146,7 +146,7 @@ def send_mail(request):
 
             smtp.login(Email_address, Password)
             subject="EMERGENCY REQUEST"
-            body='REQUEST TO SEND THE AMBULANCE TO THE GIVEN DETAILS\n\n\n\n\nUSER DETAILS\n\nNAME : '+name.upper()+"\n"+'ADDRESS :'+address+"\n"+'PHONE NO : '+number+"\n"+"OPTIONAL PH. No : "+opnumber+"\n"+'EMAIL : '+email+"\n"+'MESSAGE : '+message+"\n"+"\n\nHOSPITAL DETAILS\n\nNAME :"+NAME+"\n"+'EMAIL : '+EMAIL+"\n"+'PHONE NUMBER : '+PHONE_NO+"\n"+'ADDRESS : '+ADDRESS+""+city+"\n"+"PIN CODE :"+str(PINCODE)
+            body='REQUEST TO SEND THE AMBULANCE TO THE GIVEN DETAILS\n\n\n\n\nUSER DETAILS\n\nNAME : '+name.upper()+"\n"+'ADDRESS :'+address+"\n"+'PHONE NO : '+number+"\n"+"OPTIONAL PH. No : "+opnumber+"\n"+'EMAIL : '+email+"\n"+'MESSAGE : '+message+"\n"+"\n\nHOSPITAL DETAILS\n\nNAME :"+NAME+"\n"+'EMAIL : '+EMAIL+"\n"+'PHONE NUMBER : '+PHONE_NO+"\n"+'ADDRESS : '+ADDRESS+"\n"+"PIN CODE :"+str(PINCODE)
 
             msg=f'Subject:{subject}\n\n{body}'           
 
