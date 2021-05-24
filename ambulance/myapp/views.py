@@ -37,12 +37,8 @@ def second(request):
     
 
     link="https://maps.google.com/maps?q=hospital+near+"+ads[0:-1]+"&output=embed&z=13"
-    succ={"num":link}
-    print("i am harsh >>>>>",name,number,address,email,link)
-    
-
-    
-    
+    succ={"num":link} 
+      
     return render(request,"second.html",succ)
 
 
