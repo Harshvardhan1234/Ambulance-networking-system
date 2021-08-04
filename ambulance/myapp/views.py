@@ -149,8 +149,8 @@ def send_mail(request):
             body='REQUEST TO SEND THE AMBULANCE TO THE GIVEN DETAILS\n\n\n\n\nUSER DETAILS\n\nNAME : '+name.upper()+"\n"+'ADDRESS :'+address+"\n"+'PHONE NO : '+number+"\n"+"OPTIONAL PH. No : "+opnumber+"\n"+'EMAIL : '+email+"\n"+'MESSAGE : '+message+"\n"+"\n\nHOSPITAL DETAILS\n\nNAME :"+NAME+"\n"+'EMAIL : '+EMAIL+"\n"+'PHONE NUMBER : '+PHONE_NO+"\n"+'ADDRESS : '+ADDRESS+"\n"+"PIN CODE :"+str(PINCODE)
 
             msg=f'Subject:{subject}\n\n{body}'           
-
-            smtp.sendmail(Email_address,EMAIL,msg)
+            #email to the hospital
+            #smtp.sendmail(Email_address,EMAIL,msg)
             
             smtp.sendmail(Email_address,email,msg)                
         
